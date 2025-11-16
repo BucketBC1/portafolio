@@ -1,0 +1,17 @@
+
+
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #1e88e5;
+  --secondary-color: #424242;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,38 @@
+:root{
+  --primary-color: rgb(230, 230, 230);
+  --secondary-color: rgb(242, 242, 242);
+
+}
+
+
+.app {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;           
+  height: 100vh;          
+  overflow: hidden;       
+  box-sizing: border-box; 
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  max-width: 400px;
+  width: 25vw;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+}
+
+
+
+
+
+
+
