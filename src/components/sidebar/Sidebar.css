@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    height: 700px;
     width: 250px;
     background-color: rgb(230, 230, 230);
     box-sizing: border-box;
@@ -11,6 +11,7 @@
 
 .photo {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     height: 230px;
@@ -21,7 +22,38 @@
     overflow: hidden;
 }
 
-img{
+img {
     height: 100%;
     width: auto;
+}
+
+.routes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.routes .route{
+    text-decoration: none;
+}
+
+.routes li {
+    font-size: 1.2em;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 5px 0;
+    color: #666;
+}
+.routes li:hover {
+    color: #29ABE2;
+}
+
+.links {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.links a {
+    padding: 0 10px;
 }
