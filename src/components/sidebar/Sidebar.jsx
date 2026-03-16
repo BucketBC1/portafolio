@@ -1,30 +1,57 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Sidebar.css';
 
 const Sidebar = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const [isCollapsible, setIsCollapsible] = useState(false);
+
+    const handleResize = () => {
+        setIsCollapsible(window.innerWidth < 800);
+    };
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     return (
         <nav className="navegation">
-            <div className="photo">
+            <div className="photo" >
                 <img src="https://wallpapers.com/images/high/comedic-duo-mordecai-and-rigby-0q4wa58eydg8vsf0.webp" alt="User Photo"/>
+            </div> 
+
+            <div className="routes" onClick={() => isCollapsible && setIsOpen(!isOpen)}>
+                <div className="menu">
+                    <box-icon 
+                        name='menu'
+                        size='45px'
+                        color='grey'>
+                    </box-icon>
+                </div>
+                
+                {(isOpen || !isCollapsible) && (
+                    <ul className={`navUl ${isOpen ? 'open' : 'closed'}`}>
+                        <Link to="/" className="route">
+                            <li>Home</li>
+                        </Link>
+                        
+                        <Link to="/about" className="route">
+                            <li>About</li>
+                        </Link>
+                        
+                        <Link to="/technologies" className="route">
+                            <li>Technologies</li>
+                        </Link>
+                        <Link to="/projects" className="route">
+                            <li>Projects</li>
+                        </Link> 
+                    </ul>
+                )}
             </div>
-
-            <ul className="routes">
-                <Link to="/" className="route">
-                    <li>Home</li>
-                </Link>
-                
-                <Link to="/about" className="route">
-                    <li>About</li>
-                </Link>
-                
-                <Link to="/technologies" className="route">
-                    <li>Technologies</li>
-                </Link>
-
-                <Link to="/projects" className="route">
-                    <li>Projects</li>
-                </Link>
-            </ul>
 
             <div className="links">
                 <a href="https://github.com/BucketBC1">

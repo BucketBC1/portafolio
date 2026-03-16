@@ -1,20 +1,22 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 60vw;
+    min-width: 40vw;
     height: fit-content;
-    background-color: rgb(230, 230, 230);
-    box-shadow: 30px 30px 0px 0px rgb(204, 204, 204);
+    
     margin: 30px 0;
 }
 
 section {
+    margin: 5px;
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
     height: fit-content;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 30px 30px 0px 0px rgb(204, 204, 204);
 }
 
 p {
@@ -27,13 +29,49 @@ p {
     font-weight: 200;
 }
 
-.name {
+.name,
+.title {
     font-size: 40px;
     font-weight: 400;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .description {
     font-size: 20px;
     font-weight: 200;
     margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .container{
+        display: flex;
+        width: 90vw;
+        margin: 0;
+        
+    }
+
+    section {
+        box-shadow: none;
+    }
+}
+
+/* technologies */
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.technologies .technologie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
 }

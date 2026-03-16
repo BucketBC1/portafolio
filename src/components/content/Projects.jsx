@@ -1,8 +1,10 @@
+import './styles.css';
+
 const Projects = () => {
     return (
         <div className='container'>
+            <h1 className='title'>Projects</h1>
             <section>
-                <h1>Projects</h1>
             </section>
         </div>
     )

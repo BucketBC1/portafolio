@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     height: 80vh;
+    min-height: 450px;
     width: 220px;
     background-color: rgb(230, 230, 230);
     box-sizing: border-box;
-    border-radius: 125px 125px 10px 10px;
+    border-radius: 110px 110px 10px 10px;
 }
 
 .photo {
@@ -35,8 +36,16 @@ img {
     margin-top: 25px; 
 }
 
+.menu {
+    display: none;
+}
+
 .routes .route{
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .routes li {
@@ -57,4 +66,39 @@ img {
 
 .links a {
     padding: 0 10px;
+}
+
+@media (max-width: 800px) {
+    .navegation{
+        display: block;
+        height: fit-content;
+        min-height: 0;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .routes{
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        width: fit-content;
+        background-color: #E6E6E6;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .open {
+        padding: 20px;
+        background-color: #E6E6E6;
+    }
+
+    .links {
+        display: none;
+    }
 }
