@@ -1,4 +1,16 @@
 import './styles.css';
+import react from '../../assets/React.svg'
+import javascript from '../../assets/JavaScript.svg'
+import nodejs from '../../assets/Nodejs.svg'
+import html5 from '../../assets/Html5.svg'
+import css3 from '../../assets/Css3.svg'
+import docker from '../../assets/Docker.svg'
+import mssql from '../../assets/Microsoftsqlserver.svg'
+import mongodb from '../../assets/Mongodb.svg'
+import mysql from '../../assets/Mysql.svg'
+import java from '../../assets/Java.svg';
+import git from '../../assets/Git.svg'
+
 
 const Technologies = () => {
     return (
@@ -8,114 +20,70 @@ const Technologies = () => {
                 <div className='technologies'>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='react'
-                                size='60px'
-                                color='#61DBFB'>
-                            </box-icon>
+                            <img src={react} alt="" className='imgTech'/>
                         </a>
                         <span>React</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                name='javascript' 
-                                type='logo' 
-                                size='60px'
-                                color='#F0DB4F'>
-                            </box-icon>
+                            <img src={javascript} alt="" className='imgTech'/>
                         </a>
                         <span>JavaScript</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='nodejs'
-                                size='60px'
-                                color='#3C873A'>
-                            </box-icon>
+                            <img src={nodejs} alt="" className='imgTech'/>
                         </a>
                         <span>NodeJS</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='html5'
-                                size='60px'
-                                color='#F06529'>
-                            </box-icon>
+                            <img src={html5} alt="" className='imgTech'/>
                         </a>
                         <span>HTML5</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='docker'
-                                size='60px'
-                                color='#0DB7ED'>
-                            </box-icon>
-                        </a>
-                        <span>Docker</span>
-                    </div>
-                    <div className='technologie'>
-                        <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='java'
-                                size='60px'
-                                color='#5382a1'>
-                            </box-icon>
-                        </a>
-                        <span>Java</span>
-                    </div>
-                    <div className='technologie'>
-                        <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='mongodb'
-                                size='60px'
-                                color='#4DB33D'>  
-                            </box-icon>
-                        </a>
-                        <span>Mongodb</span>
-                    </div>
-                    <div className='technologie'>
-                        <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='css3'
-                                size='60px'
-                                color='#264DE4'>
-                            </box-icon>
+                            <img src={css3} alt="" className='imgTech'/>
                         </a>
                         <span>CSS3</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='solid' 
-                                name='data'
-                                size='60px'
-                                color='grey'>
-                            </box-icon>
+                            <img src={java} alt="" className='imgTech'/>
                         </a>
-                        <span></span>
+                        <span>Java</span>
                     </div>
                     <div className='technologie'>
                         <a href="#">
-                            <box-icon 
-                                type='logo' 
-                                name='git'
-                                size='60px'
-                                color='#F1502F'>
-                            </box-icon>
+                            <img src={mongodb} alt="" className='imgTech'/>
+                        </a>
+                        <span>Mongodb</span>
+                    </div>
+                    <div className='technologie'>
+                        <a href="#">
+                            <img src={mssql} alt="" className='imgTech'/>
+                        </a>
+                        <span>SQL Server</span>
+                    </div>
+                    <div className='technologie'>
+                        <a href="#">
+                            <img src={mysql} alt="" className='imgTech'/>
+                        </a>
+                        <span>MySQL</span>
+                    </div>
+                    <div className='technologie'>
+                        <a href="#">
+                            <img src={docker} alt="" className='imgTech'/>
+                        </a>
+                        <span>Docker</span>
+                    </div>
+                    <div className='technologie'>
+                        <a href="#">
+                            <img src={git} alt="" className='imgTech'/>
                         </a>
                         <span>Git</span>
-                    </div>          
+                    </div>
                 </div>
             </section>
         </div>
