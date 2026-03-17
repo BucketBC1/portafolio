@@ -4,6 +4,7 @@ import Home from './components/content/Home.jsx';
 import About from './components/content/About.jsx';
 import Technologies from './components/content/Technologies.jsx';
 import Projects from './components/content/Projects.jsx';
+import Navegation from './components/navegation/Navegation.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/projects' element={<Projects/>}/>
         </Routes>
       </div>
+      <Navegation/>
     </div>
   )
 }

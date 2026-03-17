@@ -1,6 +1,6 @@
 import './styles.css';
 import react from '../../assets/React.svg'
-import javascript from '../../assets/JavaScript.svg'
+import javascript from '../../assets/Javascript.svg'
 import nodejs from '../../assets/Nodejs.svg'
 import html5 from '../../assets/Html5.svg'
 import css3 from '../../assets/Css3.svg'

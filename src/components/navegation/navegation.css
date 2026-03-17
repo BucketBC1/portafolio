@@ -1,0 +1,28 @@
+.navBtns {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .navBtns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navBtns button {
+        justify-content: space-between;
+        border: none;
+        background-color: rgb(204, 204, 204);
+        height: 40px;
+        width: 100px;
+        margin: 0 50px 50px 50px;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: rgb(80, 80, 80);
+        color: white;
+        cursor: pointer;
+    }
+
+}

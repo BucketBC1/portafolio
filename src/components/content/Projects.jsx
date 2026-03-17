@@ -15,7 +15,7 @@ const Projects = () => {
                     <div className='titleDescription'>
                         <h3 className='titleProject'>Title Project</h3>
                         <p className='description desPro'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores deleniti quas molestiae facere adipisci voluptas laborum voluptatibus, a quibusdam unde dolore similique suscipit in recusandae consequatur cumque ab optio quis?</p>
-                        <a href="" className='linkRepo'>
+                        <a href="https://github.com/BucketBC1/software-de-gesti-n.git" className='linkRepo'>
                             <box-icon type='logo' 
                                 name='github'
                                 size='md'

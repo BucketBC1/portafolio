@@ -113,6 +113,8 @@ img {
 
 .titleDescription {
     padding: 0 5px 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .desPro {
@@ -131,6 +133,7 @@ img {
     text-decoration: none;
     margin-top: 10px;
     padding: 2px;
+    align-self: flex-end;
 }
 
 @media (max-width: 450px) {
