@@ -24,7 +24,7 @@ const Sidebar = () => {
                 <img src="https://wallpapers.com/images/high/comedic-duo-mordecai-and-rigby-0q4wa58eydg8vsf0.webp" alt="User Photo"/>
             </div> 
 
-            <div className="routes" onClick={() => isCollapsible && setIsOpen(!isOpen)}>
+            <div className={`routes ${isOpen ? 'open' : 'closed'}`} onClick={() => isCollapsible && setIsOpen(!isOpen)}>
                 <div className="menu">
                     <box-icon 
                         name='menu'
@@ -33,24 +33,22 @@ const Sidebar = () => {
                     </box-icon>
                 </div>
                 
-                {(isOpen || !isCollapsible) && (
-                    <ul className={`navUl ${isOpen ? 'open' : 'closed'}`}>
-                        <Link to="/" className="route">
-                            <li>Home</li>
-                        </Link>
-                        
-                        <Link to="/about" className="route">
-                            <li>About</li>
-                        </Link>
-                        
-                        <Link to="/technologies" className="route">
-                            <li>Technologies</li>
-                        </Link>
-                        <Link to="/projects" className="route">
-                            <li>Projects</li>
-                        </Link> 
-                    </ul>
-                )}
+                <ul className={`navUl ${isOpen || !isCollapsible ? 'open' : 'closed'}`}>
+                    <Link to="/" className="route">
+                        <li>Home</li>
+                    </Link>
+                    
+                    <Link to="/about" className="route">
+                        <li>About</li>
+                    </Link>
+                    
+                    <Link to="/technologies" className="route">
+                        <li>Technologies</li>
+                    </Link>
+                    <Link to="/projects" className="route">
+                        <li>Projects</li>
+                    </Link> 
+                </ul>
             </div>
 
             <div className="links">

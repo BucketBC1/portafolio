@@ -34,6 +34,7 @@ img {
     flex-direction: column;
     margin-right: auto;
     margin-top: 25px; 
+    height: fit-content;
 }
 
 .menu {
@@ -48,12 +49,38 @@ ul{
     list-style: none;
 }
 
+.navUl {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+.navUl.closed {
+    max-height: 0;
+    opacity: 0;
+}
+
+.navUl.open {
+    max-height: 200px;
+    opacity: 1;
+}
+
 .routes li {
     font-size: 1.2em;
     font-weight: 300;
     cursor: pointer;
     padding: 5px 0;
     color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.navUl.closed li {
+    opacity: 0;
+}
+
+.navUl.open li {
+    opacity: 1;
 }
 .routes li:hover {
     color: #29ABE2;
@@ -91,11 +118,18 @@ ul{
         background-color: #E6E6E6;
         border-radius: 50%;
         padding: 5px;
+        transition: transform 0.2s ease;
+    }
+
+    .menu:active {
+        transform: scale(0.80);
     }
 
     .open {
         padding: 20px;
         background-color: #E6E6E6;
+        width: fit-content;
+        border-radius: 5px;
     }
 
     .links {

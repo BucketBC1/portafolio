@@ -1,15 +1,13 @@
 :root{
   --primary-color: rgb(230, 230, 230);
   --secondary-color: rgb(242, 242, 242);
-
 }
 
 .app {
   display: flex;
   flex-direction: row;
   width: 100vw;           
-  height: 100vh;          
-  overflow: hidden;       
+  height: 100vh;     
   box-sizing: border-box; 
 }
 
@@ -25,10 +23,10 @@
 
 .content {
   display: flex;
-  justify-content: center;
-  width: 60vw;
+  flex: 1;
   overflow: auto;
-  margin: 20px 0;
+  margin: 100px 0 100px 20px;
+
 }
 
 @media (max-width: 800px) {
@@ -50,8 +48,9 @@
 
   .content {
     width: 100vw;
-    height: fit-content;
-    
+    height: 100%;
+    margin: 20px 0;
+    justify-content: center;
   }
 
 }
