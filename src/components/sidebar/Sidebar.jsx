@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import profile from '../../assets/foto-perfil.jpg';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -21,7 +22,7 @@ const Sidebar = () => {
     return (
         <nav className="navegation">
             <div className="photo" >
-                <img src="https://wallpapers.com/images/high/comedic-duo-mordecai-and-rigby-0q4wa58eydg8vsf0.webp" alt="User Photo"/>
+                <img src={profile} alt="User Photo"/>
             </div> 
 
             <div className={`routes ${isOpen ? 'open' : 'closed'}`} onClick={() => isCollapsible && setIsOpen(!isOpen)}>

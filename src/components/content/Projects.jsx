@@ -6,11 +6,11 @@ const Projects = () => {
         <div className='container'>
             <h1 className='title'>Projects</h1>
             <section className='sectionProjects'>
-            <div className='projectImage'>
+            <div className='projectImageContainer'>
                     <img 
                         src={gestion} 
                         alt=""
-                        className='' />
+                        className='imgProject' />
                 </div>
                 <div className='titleDescription'>
                     <h3 className='titleProject'>Comprehensive Inventory & Business Management Software for Construction Suppliers</h3>

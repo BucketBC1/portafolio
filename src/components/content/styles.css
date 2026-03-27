@@ -105,11 +105,11 @@ p {
 
 }
 
-.projectImage {
+.projectImageContainer {
     padding-left: 20px;
 }
 
-img {
+.imgProject {
     height: 125px;
 }
 
